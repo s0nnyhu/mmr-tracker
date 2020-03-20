@@ -66,7 +66,11 @@
           <div>
             <h1 class="mode">Ranked</h1>
             <template v-if="mmrData.ranked.avg">
-              <img :src="require(`@/assets/img/${srcImg}`)" alt="Rank" />
+              <img
+                :src="require(`@/assets/img/${srcImg}`)"
+                alt="Rank"
+                width="40%"
+              />
               <h2>
                 MMR: <strong>{{ mmrData.ranked.avg }}</strong>
               </h2>
