@@ -148,6 +148,7 @@ export default {
           return response.json();
         })
         .then(data => {
+          this.mmrData = [];
           if (!Object.keys(data).includes('error')) {
             this.mmrData = data;
             this.mmrSummary = data.ranked.summary || '';
